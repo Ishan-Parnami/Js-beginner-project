@@ -1,0 +1,150 @@
+.container {
+  width: 92%;
+  max-width: 520px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.container > h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
+}
+
+.container form {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.container form p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.container label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+
+.container input[type="number"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background-color: rgba(255,255,255,0.02);
+  color: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.container input[type="number"]::-webkit-outer-spin-button,
+.container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container input[type="number"]:focus {
+  box-shadow: 0 6px 18px rgba(0, 102, 204, 0.12);
+  border-color: rgba(0, 102, 204, 0.8);
+  transform: translateY(-1px);
+}
+
+.container button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #0066cc 0%, #6b46ff 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 22px rgba(6, 35, 99, 0.25);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.container button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.02);
+  box-shadow: 0 12px 30px rgba(6, 35, 99, 0.34);
+}
+
+.container button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(6, 35, 99, 0.22);
+}
+
+.container button:focus,
+.container input[type="number"]:focus {
+  outline: 3px solid rgba(0, 102, 204, 0.16);
+  outline-offset: 3px;
+}
+
+#result {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-weight: 700;
+  min-height: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.container form > div {
+  margin-top: 0.6rem;
+  padding: 0.85rem;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.container form > div h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.02rem;
+}
+
+.container form > div p {
+  display: flex;
+  flex-direction: row;
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+  color: #cfcfcf;
+}
+
+.bmi-underweight { color: #9ad4ff; }
+.bmi-normal      { color: #8ef29a; }
+.bmi-overweight  { color: #ffd06b; }
+.bmi-obese       { color: #ff8787; }
+
+@media (max-width: 420px) {
+  .container {
+    padding: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .container button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    margin-top: 3.5rem;
+    max-width: 480px;
+  }
+}

@@ -4,40 +4,107 @@ body {
 }
 
 span {
-    /* text-align: left; */
   display: block;
 }
 .buttonContainer {
-  margin: 100px auto 100px;
-  width: 80%;
+  width: 92%;
+  max-width: 520px;
+  margin: 1.5rem auto;
   display: flex;
+  gap: 0.85rem;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
+  padding: 0.25rem;
 }
 
 .button {
-  width: 100px;
-  height: 100px;
-  border: solid black 2px;
   display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), inset 0 -4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+  outline: none;
 }
 
-#grey {
-  background: #262626;
+#grey   { background: #9aa0a6; }
+#white  { background: #ffffff; border-color: rgba(0,0,0,0.08); box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+#yellow { background: #ffd24d; }
+#green  { background: #54c07f; }
+#blue   { background: #3b82f6; }
+
+.button:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55), inset 0 -2px 6px rgba(0,0,0,0.16);
+  border-color: rgba(255,255,255,0.2);
 }
 
-#white {
-  background: white;
-}
-#blue {
-  background: blue;
-}
-#yellow {
-  background: yellow;
+.button:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45), inset 0 -6px 10px rgba(0,0,0,0.25);
 }
 
-#green {
-  background: green;
+.button:focus-visible {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.55), 0 0 0 6px rgba(0, 102, 204, 0.14);
+  transform: translateY(-3px) scale(1.03);
+  border-color: rgba(0, 102, 204, 0.9);
+}
+
+.button.selected {
+  border-width: 3px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6), 0 0 0 6px rgba(255,255,255,0.04);
+  transform: translateY(-4px) scale(1.06);
+}
+
+h2 {
+  margin: 1.25rem auto 0.8rem;
+  max-width: 760px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: #dcdcdc;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+h2 span {
+  display: block;
+  font-size: 0.95rem;
+  color: #bdbdbd;
+  margin-top: 0.3rem;
+  font-weight: 400;
+}
+
+.color-label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 420px) {
+  .button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .buttonContainer {
+    gap: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .buttonContainer {
+    margin-top: 2rem;
+  }
 }

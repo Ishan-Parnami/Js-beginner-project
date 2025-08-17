@@ -4,7 +4,7 @@ const colorChanger =() => {
     const body = document.querySelector("body");
     
     buttons.forEach((button) => {
-        button.addEventListener("mouseover", (e) => { 
+        button.addEventListener("click", (e) => { 
             // console.log(e);
             // console.log(e.target);
             if(e.target.id === "grey") body.style.backgroundColor = "#262626";
