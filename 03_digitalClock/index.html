@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <title>Your Local Time</title>
+  <style>
+    .center {
+      display: flex;
+      height: 90vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #banner span {
+      font-size: 36px;
+      font-weight: bold;
+      background: linear-gradient(to right, #0066cc, #6b46ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    #clock {
+      font-size: 48px;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+      padding: 25px 60px;
+      min-width: 400px;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="https://github.com/Ishan-Parnami/Js-beginner-project" target="_blank">GitHub</a>
+  </nav>
+  <div class="center">
+    <div id="banner"><span>Your local time</span></div>
+    <div id="clock"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
