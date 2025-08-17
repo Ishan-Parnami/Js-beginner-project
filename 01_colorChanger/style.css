@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+span {
+    /* text-align: left; */
+  display: block;
+}
+.buttonContainer {
+  margin: 100px auto 100px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 2px;
+  display: inline-block;
+}
+
+#grey {
+  background: #262626;
+}
+
+#white {
+  background: white;
+}
+#blue {
+  background: blue;
+}
+#yellow {
+  background: yellow;
+}
+
+#green {
+  background: green;
+}
