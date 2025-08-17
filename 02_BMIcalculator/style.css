@@ -114,14 +114,15 @@
 
 .container form > div h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.02rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .container form > div p {
   display: flex;
   flex-direction: row;
-  margin: 0.25rem 0;
-  font-size: 0.92rem;
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
   color: #cfcfcf;
 }
 
