@@ -19,7 +19,7 @@ formData.addEventListener('submit', (e)=>{
     }
 
     const bmi = (weight / ((height * height)/10000)).toFixed(2);
-    document.querySelector('#result').outerHTML = `<div>Your BMI is <span class="bmi-${getBmiCategory(bmi)}">${bmi}</span>, You are <span class="bmi-${getBmiCategory(bmi)}">${getBmiCategory(bmi)}.</span></div>`;
+    document.querySelector('#result').innerHTML = `<div>Your BMI is <span class="bmi-${getBmiCategory(bmi)}">${bmi}</span>, You are <span class="bmi-${getBmiCategory(bmi)}">${getBmiCategory(bmi)}.</span></div>`;
 })
 
 function getBmiCategory(bmi) {
