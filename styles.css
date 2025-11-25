@@ -69,7 +69,7 @@ main h1 {
 .project-link {
   position: relative;
   display: block;
-  padding: .9rem 1rem;
+  display: flex;
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border: 1px solid rgba(255,255,255,0.04);
@@ -81,7 +81,9 @@ main h1 {
 
 .project-link a {
   color: inherit;
+  flex-grow: 1;
   text-decoration: none;
+  padding: .9rem 1rem;
   font-weight: 600;
   position: relative;
   z-index: 1;
